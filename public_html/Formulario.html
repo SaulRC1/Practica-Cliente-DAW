@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Práctica 2 - DAW</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <h1>SEGUNDA MARKET</h1>
+            <img src="./images/segunda-mano.png" alt="logotipo de la tienda">
+        </header>
+
+        <nav>
+            <a href="index.html">Inicio |</a>
+            <a href="Categorias.html">Categorías |</a>
+            <a href="Articulos.html">Artículos |</a>
+            <a href="Formulario.html">Formulario</a>
+        </nav><br><br>
+
+        <section>
+            <form>
+                <label for="correo-electronico">Correo Electrónico</label>
+                <input type="email" name="correo-electronico" 
+                       id="correo-electronico" required><br><br>
+
+                <label for="clave">Clave</label>
+                <input type="password" required name="clave" id="clave"><br><br>
+
+                <label for="repetir-clave">Repetir Clave</label>
+                <input type="password" required name="repetir-clave" id="repetir-clave"><br><br>
+
+                <label for="nombre">Nombre</label>
+                <input type="text" required name="nombre" id="nombre"><br><br>
+
+                <label for="direccion">Dirección</label>
+                <input type="text" name="direccion" id="direccion"><br><br>
+
+                <label>Código Postal</label>
+                <input type="text" name="codigo-postal" id="codigo-postal" pattern="^[0-9]{2}\.[0-9]{3}"><br><br>
+
+                <label for="localidad">Provincia</label>
+                <select name="localidad" id="localidad">
+                    <option data-postal="01" value="Alava/Araba">Alava/Araba</option>
+                    <option data-postal="02" value="Albacete">Albacete</option>
+                    <option data-postal="03" value="Alicante">Alicante</option>
+                    <option data-postal="04" value="Almeria">Almería</option>
+                    <option data-postal="05" value="Avila">Avila</option>
+                    <option data-postal="06" value="Badajoz">Badajoz</option>
+                    <option data-postal="07" value="Islas Baleares">Islas Baleares</option>
+                    <option data-postal="08" value="Barcelona">Barcelona</option>
+                    <option data-postal="09" value="Burgos">Burgos</option>
+                    <option data-postal="10" value="Caceres">Cáceres</option>
+                    <option data-postal="11" value="Cadiz">Cádiz</option>
+                    <option data-postal="12" value="Castellon">Castellón</option>
+                    <option data-postal="13" value="Ciudad Real">Ciudad Real</option>
+                    <option data-postal="14" value="Cordoba">Córdoba</option>
+                    <option data-postal="15" value="A Coruna/La Coruna">A Coruña/La Coruña</option>
+                    <option data-postal="16" value="Cuenca">Cuenca</option>
+                    <option data-postal="17" value="Gerona/Girona">Gerona/Girona</option>
+                    <option data-postal="18" value="Granada">Granada</option>
+                    <option data-postal="19" value="Guadalajara">Guadalajara</option>
+                    <option data-postal="20" value="Gipuzkoa/Guipuzcoa">Gipuzkoa/Guipuzcoa</option>
+                    <option data-postal="21" value="Huelva">Huelva</option>
+                    <option data-postal="22" value="Huesca">Huesca</option>
+                    <option data-postal="23" value="Jaen">Jaen</option>
+                    <option data-postal="24" value="Leon">León</option>
+                    <option data-postal="25" value="Lerida/Lleida">Lérida/Lleida</option>
+                    <option data-postal="26" value="La Rioja">La Rioja</option>
+                    <option data-postal="27" value="Lugo">Lugo</option>
+                    <option data-postal="28" value="Madrid">Madrid</option>
+                    <option data-postal="29" value="Malaga">Málaga</option>
+                    <option data-postal="30" value="Murcia">Murcia</option>
+                    <option data-postal="31" value="Navarra">Navarra</option>
+                    <option data-postal="32" value="Orense/Ourense">Orense/Ourense</option>
+                    <option data-postal="33" value="Asturias">Asturias</option>
+                    <option data-postal="34" value="Palencia">Palencia</option>
+                    <option data-postal="35" value="Las Palmas">Las Palmas</option>
+                    <option data-postal="36" value="Pontevedra">Pontevedra</option>
+                    <option data-postal="37" value="Salamanca">Salamanca</option>
+                    <option data-postal="38" value="S.C.Tenerife">S.C.Tenerife</option>
+                    <option data-postal="39" value="Cantabria">Cantabria</option>
+                    <option data-postal="40" value="Segovia">Segovia</option>
+                    <option data-postal="41" value="Sevilla">Sevilla</option>
+                    <option data-postal="42" value="Soria">Soria</option>
+                    <option data-postal="43" value="Tarragona">Tarragona</option>
+                    <option data-postal="44" value="Teruel">Teruel</option>
+                    <option data-postal="45" value="Toledo">Toledo</option>
+                    <option data-postal="46" value="Valencia">Valencia</option>
+                    <option data-postal="47" value="Valladolid">Valladolid</option>
+                    <option data-postal="48" value="Bizkaia/Vizcaya">Bizkaia/Vizcaya</option>
+                    <option data-postal="49" value="Zamora">Zamora</option>
+                    <option data-postal="50" value="Zaragoza">Zaragoza</option>
+                    <option data-postal="51" value="Ceuta">Ceuta</option>
+                    <option data-postal="52" value="Melilla">Melilla</option>
+                </select><br><br>
+
+                <label for="facebook">Facebook</label>
+                <input type="url" id="facebook" name="facebook">
+
+                <label for="telefono">Teléfono</label>
+                <input id="telefono" name="telefono" type="text" pattern="^[0-9]{3}\.[0-9]{3}\.[0-9]{3}"><br>
+
+                <input id="checkbox-electronica" type="checkbox" name="checkbox-electronica">
+                <label for="checkbox-electronica">Electrónica</label><br>
+
+                <input id="checkbox-libros" type="checkbox" name="checkbox-libros">
+                <label for="checkbox-libros">Libros</label><br>
+
+                <input id="checkbox-juegos" type="checkbox" name="checkbox-juegos">
+                <label>Juegos</label><br>
+
+                <input id="checkbox-otras" type="checkbox" name="checkbox-otras">
+                <label for="checkbox-otras">Otras</label><br>
+
+                <input type="radio" id="radiobutton-buscador" name="radiobutton-como-conoce-este-sitio" value="radiobutton-buscador">
+                <label for="radiobutton-buscador">Buscador</label><br>
+                
+                <input type="radio" id="radiobutton-amigo" name="radiobutton-como-conoce-este-sitio" value="radiobutton-amigo">
+                <label for="radiobutton-amigo">Amigo</label><br>
+                
+                <input type="radio" id="radiobutton-radio" name="radiobutton-como-conoce-este-sitio" value="radiobutton-radio">
+                <label for="radiobutton-radio">Radio</label><br>
+
+                <input type="radio" id="radiobutton-television" name="radiobutton-como-conoce-este-sitio" value="radiobutton-television">
+                <label for="radiobutton-television">Televisión</label><br>
+                
+                <input type="radio" id="radiobutton-prensa" name="radiobutton-como-conoce-este-sitio" value="radiobutton-prensa">
+                <label for="radiobutton-prensa">Prensa</label><br>
+                
+                <label></label>
+                <input type="submit" id="submit-form" value="Enviar">
+            </form>
+        </section>
+
+        <footer>
+            &COPY;2022 - Saúl Rodríguez Naranjo
+        </footer>
+    </body>
+</html>
