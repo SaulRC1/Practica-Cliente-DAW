@@ -1,4 +1,108 @@
+*:not(ul,li){
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    width:100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column
+}
+
 table, th, td {
     border: 1px solid black;
+}
+
+th {
+    background-color: purple;
+    color: white;
+}
+
+.pair-table-row {
+    
+}
+
+.odd-table-row {
+    background-color: cornflowerblue;
+}
+
+header {
+    background-color: white;
+    max-height: 75px;
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+header img {
+    height: 90%;
+    margin-right: 10px;
+}
+
+nav {
+    background-color: purple;
+    display: flex;
+    height: 50px;
+    max-height: 50px;
+    min-height: 50px;
+    flex-direction: row;
+    justify-items: flex-start;
+    align-items: center;
+}
+
+nav a {
+    margin-right: 10px;
+    color: white;
+}
+
+section {
+    margin:25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.categories-div {
+    margin: 10px;
+}
+
+.category-header {
+    background-color: orangered;
+    color: white;
+}
+
+.category-header:hover + .category-description{
+    display: block;
+}
+
+.category-description {
+    display: none;
+    background-color: orange;
+    color: white;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: cyan;
+}
+
+.flexbox-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flexbox-column {
+    display: flex;
+    flex-direction: column;
 }
 
